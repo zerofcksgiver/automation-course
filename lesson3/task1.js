@@ -1,0 +1,15 @@
+const a = 4;
+const b = 10;
+const c = 7;
+const sum = a+b;
+const substr = b-c;
+const multiply = a*c;
+const divide = b/a;
+const leftover = c%b;
+const stepen =a**b;
+console.log(sum);
+console.log(substr);
+console.log(multiply);
+console.log(divide);
+console.log(leftover);
+console.log(stepen);
