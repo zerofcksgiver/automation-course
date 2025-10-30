@@ -5,3 +5,15 @@
 Якщо година від 12 до 17 (включно) → "Good day!"
 Якщо година від 18 до 23 (включно) → "Good evening!"
 */
+
+let hour = Math.floor(Math.random()*24);
+console.log(`The time is ${hour}:00`);
+if (hour >= 0 && hour <= 5) {
+  console.log("Good night!");
+} else if (hour >= 6 && hour <= 11) {
+  console.log("Good morning!");
+} else if (hour >= 12 && hour <= 17) {
+  console.log("Good day!");
+} else if (hour >= 18 && hour <= 23) {
+  console.log("Good evening!");
+}
