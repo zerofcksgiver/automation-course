@@ -21,3 +21,8 @@ console.log(`Area of the pryamokutnyk is ${area}`); */
     return width * height;
 }
 console.log(area(10,20)); */
+
+//Arrow Function
+/* const multiply = (width, height) => width * height;
+console.log(multiply(10, 15)); */
+

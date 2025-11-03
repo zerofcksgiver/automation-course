@@ -6,4 +6,14 @@
 Повертає цей пароль у вигляді рядка.
 Викличте функцію з аргументом 8, виведіть згенерований пароль у консоль. */
 
-
+function generatePassword(length) {
+    const options = ('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789');
+    let password = (" ");
+        for (let i = 0; i < length; i++){
+            const randomOption = Math.floor(Math.random() * options.length);
+            password += options[randomOption];
+        }
+return password;
+}
+let newPassword = generatePassword(8);
+console.log(newPassword);

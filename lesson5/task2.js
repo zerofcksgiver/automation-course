@@ -6,3 +6,19 @@ ordered (кількість товарів у замовленні)
 "Your order is empty" — якщо ordered дорівнює 0
 "Your order is accepted" — якщо товару достатньо
 Викличте функцію з різними значеннями available та ordered, виведіть результат у консоль. */
+
+function checkOrder(available, ordered) {
+    if (ordered > available) {
+        console.log("Your order is too large, we don't have enough goods.")
+        return;
+    }
+    if (ordered === 0) {
+        console.log("Your order is empty")
+        return;
+    }
+    console.log("Your order is accepted");
+}
+
+checkOrder(10, 25);
+checkOrder(10, 0);
+checkOrder(10, 5);
