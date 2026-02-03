@@ -15,5 +15,5 @@ function generatePassword(length) {
         }
 return password;
 }
-let newPassword = generatePassword(8);
+let newPassword = generatePassword(24);
 console.log(newPassword);
