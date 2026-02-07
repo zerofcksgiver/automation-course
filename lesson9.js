@@ -1,0 +1,91 @@
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     introduce() {
+//         console.log(`Привіт, мене звати ${this.name} і мені ${this.age} років.`);
+//     }
+//     }
+
+// const user1 = new Person('Echo', 25);
+// user1.introduce();
+
+// const user2 = new Person('Luna', 30);
+// user2.introduce();
+
+
+// class Car{
+//     constructor(make, model, year){
+//         this.make = make;
+//         this.model = model;
+//         this.year = year;
+//     }
+// }
+
+// const car = new Car('Toyota', 'Yaris', 2024);
+// console.log(car.make);
+// console.log(car.model);
+// console.log(car.year);
+
+// class BankAccount {
+//     #balance = 0; //private field?
+
+//         deposit(amount) {
+//             if (amount > 0){
+//                 this.#balance += amount;
+//             }
+//         }
+// getBalance() {
+//     return this.#balance;
+//     }
+// }
+// const account1 = new BankAccount();
+// account1.deposit(1000);
+// console.log(account1.getBalance());
+
+// class Temperature {
+//     constructor(celsius) {
+//         this._celsius = celsius;
+//     }
+//     get fahrenheit() {
+//         return this._celsius * 9/5 + 32;
+//         }
+//     set celsius(value) {
+//         if (value < -273.15) {
+//             console.log('Температура не может быть ниже абсолютного нуля!');
+//             return;
+//         }
+//         this._celsius = value;
+//     }
+// }
+
+// const temp = new Temperature(25);
+// console.log(temp.fahrenheit);
+
+// class MathHelper {
+//     static square(number) {
+//         return number * number;
+//     }
+// }
+// console.log(MathHelper.square(5)); //25
+
+// class Config {
+//     static defaultLanguage = 'uk';
+// }
+// console.log(Config.defaultLanguage); //uk
+
+// class Logger {
+//     static log(message) {
+//         console.log(`[LOG]:  ${message}`);
+//     }
+// }
+// Logger.log('This is a log message123.');
+
+// class TimeHelper {
+//     static async delay(ms) {
+//         return new Promise(resolve => setTimeout(resolve, ms));
+//     }
+// }
+// TimeHelper.delay(4000).then(() => console.log('4 seconds have passed!'));
+
