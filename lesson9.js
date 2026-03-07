@@ -89,3 +89,47 @@
 // }
 // TimeHelper.delay(4000).then(() => console.log('4 seconds have passed!'));
 
+class Car {
+
+    // color = 'red';
+
+    constructor(color, brand, model) {
+        this.color = color;
+        this.brand = brand;
+        this.model = model;
+        this.petrol = 0;
+    }
+
+    turnOn(){
+        console.log(`car ${this.brand} ${this.model} is turned on`);
+    }
+    turnOff(){
+        console.log(`The car is turned off`);
+    }
+    fillPetrol(liters){
+        if((liters + this.petrol) <= 100){
+          console.log(`${liters} of fuel has been loaded`);
+           this.petrol += liters;
+          console.log(`Now there is ${this.petrol} inside`);
+         
+        }  else{
+            console.log('Number of liters in the car should be less then 100');
+        }
+
+    }
+}
+
+const audi = new Car('black', 'audi', 'TT');
+const bmw = new Car('red', 'BMW', 'X5');
+audi.turnOn();
+audi.fillPetrol(20);
+audi.fillPetrol(20);
+audi.fillPetrol(20);
+audi.fillPetrol(25);
+audi.fillPetrol(20);
+audi.turnOff();
+bmw.fillPetrol(40);
+
+
+console.log(audi.color);
+console.log(audi);
