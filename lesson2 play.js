@@ -32,3 +32,19 @@ console.log(`Hello, ${username}!`); */
 console.log(message); */
 
 
+// console.log(isNaN('Hello')); //true
+// console.log(isNaN(42)); //false
+// console.log(isNaN("42")); //false, так как строка "42" может быть преобразована в число 42
+
+// console.log(1e3 === 1*1000);
+// console.log(7.3e9);
+// console.log (1e1);
+
+// const a = 0b11111111; //255 в двоичной системе
+// const b = 0o377; //255 в восьмеричной системе
+// const c = 0xFF; //255 в шестнадцатеричной системе
+//console.log(a == b);
+//console.log(a === b);
+
+
+
