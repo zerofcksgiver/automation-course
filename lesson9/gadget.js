@@ -1,6 +1,6 @@
 //Створіть клас Gadget 
 
-class Gadget {
+export default class Gadget {
     constructor (brand, model, year) {
         this.brand = brand;
         this.model = model;
@@ -29,10 +29,3 @@ class Gadget {
     }
 
 }
-
-
-
-
-
-export default Gadget;
-

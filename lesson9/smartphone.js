@@ -1,8 +1,8 @@
 //Створіть клас Smartphone, який успадковує Gadget 
 
-import Gadget from './gadget.js';
+import Gadget from './Gadget.js';
 
-class Smartphone extends Gadget {
+export default class Smartphone extends Gadget {
     constructor (brand, model, year, operatingSystem) {
         super(brand, model, year);
         this._operatingSystem = operatingSystem;
@@ -24,5 +24,3 @@ class Smartphone extends Gadget {
         return `This smartphone is a ${this._year} ${this.brand} ${this.model} working on ${this._operatingSystem}.`; //а зачем ставить _ перед year в смартфоне если и так работает?
     }
 }
-
-export default Smartphone;

@@ -1,4 +1,4 @@
-import Gadget from './gadget.js';
+import Gadget from './Gadget.js';
 import Smartphone from './smartphone.js';
 
 const PC = new Gadget('Asus', 'ROG Strix', 2021);
